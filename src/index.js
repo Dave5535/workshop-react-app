@@ -1,17 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom/client";
+import "bootstrap/dist/css/bootstrap.css";
+import DataTable from "workshop-react-app\src\DataTable.js";
 
+// setup requerd a wellcome greating 
+
+const greatingMessage = <div>Hello everyone!</div>
+
+
+
+
+// Tested if bootstrap Was working ( It do work )
+const navbar = 
+
+<nav class="navbar navbar-expand-sm bg-dark">
+
+<div class="container-fluid">
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Link 3</a>
+    </li>
+  </ul>
+</div>
+
+</nav>
+
+
+
+
+
+//ReactDOM.render(menu, document.getElementById('root'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+root.render(greatingMessage);
