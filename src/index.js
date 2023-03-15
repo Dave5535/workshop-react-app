@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
-import DataTable from "workshop-react-app\src\DataTable.js";
+import DataTable from "./DataTable";
+
+
 
 // setup requerd a wellcome greating 
 
@@ -37,6 +39,4 @@ const navbar =
 
 //ReactDOM.render(menu, document.getElementById('root'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
-root.render(greatingMessage);
+root.render(<DataTable/>);
